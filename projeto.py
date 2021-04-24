@@ -229,7 +229,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_input.setText(_translate("MainWindow", "Ground Track"))
         self.pushButton_ana.setText(_translate("MainWindow", "Trgetória"))
-        self.label_14.setText(_translate("MainWindow", "Excentricidade (º)"))
+        self.label_14.setText(_translate("MainWindow", "Excentricidade"))
         self.label_15.setText(_translate("MainWindow", "Argumento do perigeo (º)"))
         self.label_16.setText(_translate("MainWindow", "Semi-eixo maior (km)"))
         self.label_24.setText(_translate("MainWindow", "Anomalia verdadeira (º)"))
