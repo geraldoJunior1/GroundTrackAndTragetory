@@ -229,14 +229,14 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_input.setText(_translate("MainWindow", "Ground Track"))
         self.pushButton_ana.setText(_translate("MainWindow", "Trgetória"))
-        self.label_14.setText(_translate("MainWindow", "Excentricidade"))
-        self.label_15.setText(_translate("MainWindow", "Argumento do perigeo"))
-        self.label_16.setText(_translate("MainWindow", "Semi-eixo maior"))
-        self.label_24.setText(_translate("MainWindow", "Anomalia verdadeira"))
-        self.label_25.setText(_translate("MainWindow", "Inclinação"))
+        self.label_14.setText(_translate("MainWindow", "Excentricidade (º)"))
+        self.label_15.setText(_translate("MainWindow", "Argumento do perigeo (º)"))
+        self.label_16.setText(_translate("MainWindow", "Semi-eixo maior (km)"))
+        self.label_24.setText(_translate("MainWindow", "Anomalia verdadeira (º)"))
+        self.label_25.setText(_translate("MainWindow", "Inclinação (º)"))
         self.groupBox.setTitle(_translate("MainWindow", "Plot"))
         self.label_26.setText(_translate("MainWindow", "Hora"))
-        self.label_28.setText(_translate("MainWindow", "Nodo ascendente"))
+        self.label_28.setText(_translate("MainWindow", "Nodo ascendente (º)"))
         self.label_32.setText(_translate("MainWindow", "Períodos"))
         self.label_29.setText(_translate("MainWindow", "Desenvolvido por:"))
         self.label_58.setText(_translate("MainWindow", "Geraldo Majella N. Junior "))
@@ -265,11 +265,11 @@ class Ui_MainWindow(object):
     def artigo(self,aaa):
 
         mi = 3.986e5
-        e = self.exce
-        i = self.inclina
-        omega = self.argperi
-        Omega = self.nodo
-        tetha = self.anaved
+        e = self.exce/57.2958
+        i = self.inclina/57.2958
+        omega = self.argperi/57.2958
+        Omega = self.nodo/57.2958
+        tetha = self.anaved/57.2958
         a = self.semieixo
         nP = self.periodos
         T = 2*np.pi/(np.sqrt(mi/a**3))
